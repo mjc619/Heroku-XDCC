@@ -1,5 +1,6 @@
 # Heroku XDCC
 ## AKA Mongolian Cartoons
+modivifed ver for diffrent bots/rss, also striped backround due to webgl activationg steamvr
 ## Deploying to Heroku
 
 ```
