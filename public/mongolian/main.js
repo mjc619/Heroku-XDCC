@@ -34,7 +34,7 @@ socket.on ('errormsg', function(msg) {
 $("#connect").click(function() {
     _rotSpeed = 2;
     $(".spinner").fadeIn();
-    $("#status").text("Connecting to Rizon #NIBL");
+    $("#status").text("Connecting to Rizon");
     var s = $("#command").val().split(" ");
     var botname = s[1];
     var packnum = s[4];
@@ -93,7 +93,7 @@ $(document).ready(function(){
 function searchFor(animeTitle) {
     $("#command").val("...");
     var searchString = "[HorribleSubs] " + animeTitle + " [1080p].mkv";
-    $.get("https://nibl.co.uk/bots.php?search=" + encodeURIComponent(searchString), function (data) {
+    $.get("https://xdcc.horriblesubs.info/?search=" + encodeURIComponent(searchString), function (data) {
         var results = [];
         $(data).find(".botlistitem").each(function () {
             if (!this.getAttribute("botname").includes("v6") && $(this).find(".filename").text().includes(animeTitle)) {
